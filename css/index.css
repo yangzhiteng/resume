@@ -1,0 +1,832 @@
+html, body, .main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+@keyframes move {
+    0%{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.music {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+    z-index: 111;
+    background: url("../audio/music.svg")no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+}
+.musicMove{
+    -webkit-animation: move 1s infinite linear both;
+    animation: move 1s infinite linear both;
+}
+.slide1 {
+    background: url("../img/beijing.png") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.slide1 img:nth-of-type(1) {
+    width: 3.4rem;
+    height: 0.92rem;
+    left: 1.46rem;
+    top: 1.22rem;
+    position: relative;
+}
+
+.slide1 img:nth-of-type(2) {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    left: 3.2rem;
+}
+
+.slide1 img:nth-of-type(3) {
+    width: 0.78rem;
+    height: 0.93rem;
+    position: absolute;
+    left: 0.88rem;
+    top: 0.52rem;
+}
+
+.slide1 img:nth-of-type(4) {
+    width: 1.1rem;
+    height: 1.07rem;
+    position: absolute;
+    top: 1.16rem;
+    right: 0.26rem;
+}
+
+.slide1 img:nth-of-type(5) {
+    width: 0.66rem;
+    height: 1rem;
+    position: absolute;
+    left: 0.15rem;
+    top: 3.2rem;
+}
+
+.slide1 img:nth-of-type(6) {
+    width: 1.34rem;
+    height: 0.96rem;
+    position: absolute;
+    right: 0.425rem;
+    top: 3.18rem;
+}
+
+@keyframes ring {
+    0% {
+        opacity: 0;
+        transform: scale(2, 2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+.slide1 img:nth-of-type(7) {
+    width: 5.3rem;
+    height: 5.3rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 3.99rem;
+}
+
+@keyframes computer {
+    0% {
+        transform: scale(0, 0);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.slide1 img:nth-of-type(8) {
+    width: 5.1rem;
+    height: 4.32rem;
+    position: absolute;
+    left: 0.66rem;
+    top: 5.17rem;
+}
+
+@keyframes pen {
+    0% {
+        transform: scale(0, 0);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.slide1 img:nth-of-type(9) {
+    width: 0.7rem;
+    height: 0.76rem;
+    position: absolute;
+    left: 1.06rem;
+    top: 5.46rem;
+}
+
+.slide1 img:nth-of-type(10) {
+    width: 0.9rem;
+    height: 1.63rem;
+    position: absolute;
+    right: 0.63rem;
+    top: 5.19rem;
+}
+
+@keyframes bookmark {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+.slide1 img:nth-of-type(11) {
+    width: 1.17rem;
+    height: 1.71rem;
+    position: absolute;
+    left: 0.82rem;
+    top: 6.49rem;
+    transform: perspective(2000px);
+}
+
+@keyframes iphone {
+    0% {
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+.slide1 img:nth-of-type(12) {
+    width: 0.57rem;
+    height: 1.08rem;
+    position: absolute;
+    right: 1.06rem;
+    top: 7.74rem;
+    transform: perspective(2000px);
+}
+
+.slide1 p:nth-of-type(1) {
+    font-size: 0.5rem;
+    position: absolute;
+    left: 2.19rem;
+    top: 1.35rem;
+}
+
+.slide1 p:nth-of-type(2) {
+    color: white;
+    font-size: 0.2rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 2.34rem;
+    letter-spacing: 0.1rem;
+}
+
+#page1 img:nth-child(1) {
+    -webkit-animation: zoomIn 2s 1 both;
+    animation: zoomIn 2s 1 both;
+}
+
+#page1 img:nth-of-type(2) {
+    -webkit-animation: zoomIn 2s 1 0.2s both;
+    animation: zoomIn 2s 1 0.2s both;
+}
+
+#page1 img:nth-of-type(3) {
+    -webkit-animation: rotateInDownLeft 2s 1 0.8s both;
+    animation: rotateInDownLeft 2s 1 0.8s both;
+}
+
+#page1 img:nth-of-type(4) {
+    -webkit-animation: rotateInDownRight 2s 1 1s both;
+    animation: rotateInDownRight 2s 1 1s both;
+}
+
+#page1 img:nth-of-type(5) {
+    -webkit-animation: fadeIn 2s 1 1.4s both, slideInLeft 2s 1 1.4s both;
+    animation: fadeIn 2s 1 1.4s both, slideInLeft 2s 1 1.4s both;
+}
+
+#page1 img:nth-of-type(6) {
+    -webkit-animation: rotateInDownRight 2s 1 1.2s both;
+    animation: rotateInDownRight 2s 1 1.2s both;
+}
+
+#page1 img:nth-of-type(7) {
+    animation: ring 2s 1s 1 both;
+}
+
+#page1 img:nth-of-type(8) {
+    animation: computer 2s 2s 1 both;
+}
+
+#page1 img:nth-of-type(9) {
+    animation: pen 2s 2.6s 1 both;
+}
+
+#page1 img:nth-of-type(10) {
+    animation: rollIn 2s 2.2s 1 both;
+}
+#page1 img:nth-of-type(11){
+    animation: bookmark 2s 2.8s 1 both;
+}
+#page1 img:nth-of-type(12){
+    animation: iphone 2s 2.4s 1 both;
+}
+#page1 p:nth-of-type(1) {
+    -webkit-animation: zoomIn 2s 1 0.5s both;
+    animation: zoomIn 2s 1 0.5s both;
+}
+
+#page1 p:nth-of-type(2) {
+    -webkit-animation: zoomIn 2s 1 1s both;
+    animation: zoomIn 2s 1 1s both;
+}
+
+.slide2 {
+    background: url("../img/beijing1.png") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.slide2 img:nth-of-type(1) {
+    width: 1.65rem;
+    height: 0.32rem;
+    position: absolute;
+    left: -0.1rem;
+    top: 0.7rem;
+}
+
+.slide2 img:nth-of-type(2) {
+    width: 2.84rem;
+    height: 0.74rem;
+    position: absolute;
+    left: 1.84rem;
+    top: 0.48rem;
+}
+.slide2 img:nth-of-type(3) {
+    width: 0.45rem;
+    height: 0.45rem;
+    position: absolute;
+    left: 0.84rem;
+    top: 2.12rem;
+}
+.slide2 img:nth-of-type(4) {
+    width: 1.76rem;
+    height: 0.46rem;
+    position: absolute;
+    left: 1.42rem;
+    top: 2.12rem;
+}
+.slide2 img:nth-of-type(5) {
+    width: 0.29rem;
+    height: 0.29rem;
+    position: absolute;
+    left: 0.92rem;
+    top: 2.2rem;
+}
+.slide2 img:nth-of-type(6) {
+    width: 1.65rem;
+    height: 2.29rem;
+    position: absolute;
+    right: 0.38rem;
+    top: 2.06rem;
+}
+.slide2 img:nth-of-type(7) {
+    width: 1.37rem;
+    height: 2.03rem;
+    position: absolute;
+    right: 0.51rem;
+    top: 2.2rem;
+}
+.slide2 img:nth-of-type(8) {
+    width: 0.45rem;
+    height: 0.45rem;
+    position: absolute;
+    left: 0.84rem;
+    top: 4.8rem;
+}
+.slide2 img:nth-of-type(9) {
+    width: 0.32rem;
+    height: 0.32rem;
+    position: absolute;
+    left: 0.92rem;
+    top: 4.82rem;
+}
+.slide2 img:nth-of-type(10) {
+    width: 1.77rem;
+    height: 0.47rem;
+    position: absolute;
+    left: 1.48rem;
+    top: 4.8rem;
+}
+.slide2 img:nth-of-type(11) {
+    width: 6.4rem;
+    height: 0.94rem;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+}
+.slide2 img:nth-of-type(12) {
+    width:2.36rem;
+    height: 2.76rem;
+    position: absolute;
+    right: -0.1rem;
+    bottom: 0rem;
+}
+.slide2 p:nth-of-type(1) {
+    font-size: 0.4rem;
+    position: absolute;
+    left: 2.42rem;
+    top: 0.55rem;
+    color: white;
+}
+.slide2 p:nth-of-type(2){
+    font-size: 0.25rem;
+    position: absolute;
+    left: 1.77rem;
+    top: 2.18rem;
+    color: #1e81e7;
+}
+.slide2 p:nth-of-type(3) {
+    font-size: 0.25rem;
+    position: absolute;
+    left: 0.87rem;
+    top: 2.83rem;
+}
+.slide2 p:nth-of-type(4) {
+    font-size: 0.25rem;
+    position: absolute;
+    left: 0.87rem;
+    top: 3.28rem;
+}
+.slide2 p:nth-of-type(5) {
+    font-size: 0.25rem;
+    position: absolute;
+    left: 0.87rem;
+    top: 3.78rem;
+}
+.slide2 p:nth-of-type(6) {
+    font-size: 0.25rem;
+    position: absolute;
+    left: 0.87rem;
+    top: 4.24rem;
+}
+.slide2 p:nth-of-type(7){
+    font-size: 0.25rem;
+    position: absolute;
+    left: 1.8rem;
+    top: 4.87rem;
+    color: #1e81e7;
+}
+.slide2 p:nth-of-type(8){
+    font-size: 0.25rem;
+    position: absolute;
+    left: 0.88rem;
+    top: 5.45rem;
+}
+.slide2 p:nth-of-type(9){
+    font-size: 0.25rem;
+    position: absolute;
+    left: 0.88rem;
+    top: 5.91rem;
+}
+.slide2 p:nth-of-type(10){
+    font-size: 0.25rem;
+    position: absolute;
+    left: 0.88rem;
+    top: 6.39rem;
+}
+.slide2 p:nth-of-type(11){
+    font-size: 0.3rem;
+    position: absolute;
+    left: 1.56rem;
+    bottom: 0.25rem;
+}
+#page2 img:nth-of-type(1) {
+    -webkit-animation: fadeInLeft 2s 1 both;
+    animation: fadeInLeft 2s 1 both;
+}
+#page2 img:nth-of-type(2) {
+    -webkit-animation: zoomIn 2s 0.4s 1 both;
+    animation: zoomIn 2s 0.4s 1 both;
+}
+#page2 img:nth-of-type(3) {
+    -webkit-animation: fadeInLeft 1s 1.6s 1 both;
+    animation: fadeInLeft 1s 1.6s 1 both;
+}
+#page2 img:nth-of-type(4) {
+    -webkit-animation: fadeInLeftBig 2s 1s 1 both;
+    animation: fadeInLeftBig 2s 1s 1 both;
+}
+#page2 img:nth-of-type(5) {
+    -webkit-animation: zoomIn 2s 2s 1 both;
+    animation: zoomIn 2s 2s 1 both;
+}
+#page2 img:nth-of-type(6) {
+    -webkit-animation: zoomIn 2s 1.2s 1 both;
+    animation: zoomIn 2s 1.2s 1 both;
+}
+#page2 img:nth-of-type(7) {
+    -webkit-animation: zoomIn 2s 1.4s 1 both;
+    animation: zoomIn 2s 1.4s 1 both;
+}
+#page2 img:nth-of-type(8) {
+    -webkit-animation: fadeInLeft 1s 3.5s 1 both;
+    animation: fadeInLeft 1s 3.5s 1 both;
+}
+#page2 img:nth-of-type(9) {
+    -webkit-animation: zoomIn 2s 4s 1 both;
+    animation: zoomIn 2s 4s 1 both;
+}
+#page2 img:nth-of-type(10) {
+    -webkit-animation: fadeInLeft 1s 3.5s 1 both;
+    animation: fadeInLeft 1s 3.5s 1 both;
+}
+#page2 img:nth-of-type(11) {
+    -webkit-animation: fadeInUp 2s 1 both;
+    animation: fadeInUp 2s 1 both;
+}
+#page2 img:nth-of-type(12) {
+    -webkit-animation: fadeInUp 2s 0.5s 1 both;
+    animation: fadeInUp 2s 0.5s 1 both;
+}
+#page2 p:nth-of-type(1) {
+    animation: zoomIn 2s 0.8s 1 both;
+}
+#page2 p:nth-of-type(2) {
+    opacity: 1;
+    animation:zoomIn 2s 2s 1 both;
+}
+#page2 p:nth-of-type(3) {
+    -webkit-animation:fadeInLeft 1s 2.4s 1 both;
+    animation:fadeInLeft 1s 2.4s 1 both;
+}
+#page2 p:nth-of-type(4) {
+    -webkit-animation:fadeInLeft 1s 2.8s 1 both;
+    animation:fadeInLeft 1s 2.8s 1 both;
+}
+#page2 p:nth-of-type(5) {
+    -webkit-animation:fadeInLeft 1s 3.2s 1 both;
+    animation:fadeInLeft 1s 3.2s 1 both;
+}
+#page2 p:nth-of-type(6) {
+    -webkit-animation:fadeInLeft 1s 3.6s 1 both;
+    animation:fadeInLeft 1s 3.6s 1 both;
+}
+#page2 p:nth-of-type(7) {
+    -webkit-animation:zoomIn 2s 4s 1 both;
+    animation:zoomIn 2s 4s 1 both;
+}
+#page2 p:nth-of-type(8) {
+    -webkit-animation:fadeInLeft 1s 4.2s 1 both;
+    animation:fadeInLeft 1s 4.2s 1 both;
+}
+#page2 p:nth-of-type(9) {
+    -webkit-animation:fadeInLeft 1s 4.6s 1 both;
+    animation:fadeInLeft 1s 4.6s 1 both;
+}
+#page2 p:nth-of-type(10) {
+    -webkit-animation:fadeInLeft 1s 5s 1 both;
+    animation:fadeInLeft 1s 5s 1 both;
+}
+#page2 p:nth-of-type(11) {
+    -webkit-animation:zoomIn 2s 3.5s 1 both;
+    animation:zoomIn 2s 3.5s 1 both;
+}
+.slide3{
+    background: url("../img/beijing1.png")no-repeat;
+    background-size: cover;
+}
+.slide3 img:nth-of-type(1){
+    width: 1.65rem;
+    height: 0.32rem;
+    position: absolute;
+    left: -0.1rem;
+    top: 0.7rem;
+}
+.slide3 img:nth-of-type(2) {
+    width: 2.84rem;
+    height: 0.74rem;
+    position: absolute;
+    left: 1.84rem;
+    top: 0.48rem;
+}
+.slide3 img:nth-of-type(3) {
+    width: 4.16rem;
+    height: 0.39rem;
+    position: absolute;
+    left: 1.1rem;
+    top: 1.38rem;
+}
+.slide3 img:nth-of-type(4) {
+    width: 4.16rem;
+    height: 0.39rem;
+    position: absolute;
+    left: 1.1rem;
+    top: 3.42rem;
+}
+.slide3 img:nth-of-type(5) {
+    width: 4.16rem;
+    height: 0.39rem;
+    position: absolute;
+    left: 1.1rem;
+    top: 5.54rem;
+}
+.slide3 img:nth-of-type(6) {
+    width: 6.4rem;
+    height: 0.94rem;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+}
+.slide3 img:nth-of-type(7) {
+    width:2.36rem;
+    height: 2.76rem;
+    position: absolute;
+    right: -0.1rem;
+    bottom: 0rem;
+}
+.slide3 p:nth-of-type(1) {
+    font-size: 0.4rem;
+    position: absolute;
+    left: 2.42rem;
+    top: 0.55rem;
+    color: white;
+}
+.slide3 p:nth-of-type(2) {
+    font-size: 0.25rem;
+    position: absolute;
+    left: 2.39rem;
+    top: 1.4rem;
+}
+.slide3 p:nth-of-type(3) {
+     font-size: 0.25rem;
+     position: absolute;
+     left: 1.17rem;
+     top: 1.92rem;
+ }
+.slide3 p:nth-of-type(4) {
+    font-size: 0.25rem;
+    position: absolute;
+    left: 2.39rem;
+    top: 3.46rem;
+}
+.slide3 p:nth-of-type(5) {
+    font-size: 0.25rem;
+    position: absolute;
+    left: 1.17rem;
+    top: 3.96rem;
+}
+.slide3 p:nth-of-type(6) {
+    font-size: 0.25rem;
+    position: absolute;
+    left: 2.39rem;
+    top: 5.6rem;
+}
+.slide3 p:nth-of-type(7) {
+    font-size: 0.25rem;
+    position: absolute;
+    left: 1.17rem;
+    top: 6.08rem;
+}
+.slide3 p:nth-of-type(8){
+    font-size: 0.3rem;
+    position: absolute;
+    left: 1.56rem;
+    bottom: 0.25rem;
+}
+#page3 img:nth-of-type(1) {
+    -webkit-animation: fadeInLeft 2s 1 both;
+    animation: fadeInLeft 2s 1 both;
+}
+#page3 img:nth-of-type(2) {
+    -webkit-animation: zoomIn 2s 0.4s 1 both;
+    animation: zoomIn 2s 0.4s 1 both;
+}
+#page3 img:nth-of-type(3) {
+    -webkit-animation: zoomIn 2s 1.5s 1 both;
+    animation: zoomIn 2s 1.5s 1 both;
+}
+#page3 img:nth-of-type(4) {
+    -webkit-animation: zoomIn 2s 3s 1 both;
+    animation: zoomIn 2s 3s 1 both;
+}
+#page3 img:nth-of-type(5) {
+    -webkit-animation: zoomIn 2s 4.5s 1 both;
+    animation: zoomIn 2s 4.5s 1 both;
+}
+#page3 img:nth-of-type(6) {
+    -webkit-animation: fadeInUp 2s 1 both;
+    animation: fadeInUp 2s 1 both;
+}
+#page3 img:nth-of-type(7) {
+    -webkit-animation: fadeInUp 2s 0.5s 1 both;
+    animation: fadeInUp 2s 0.5s 1 both;
+}
+#page3 p:nth-of-type(1) {
+    -webkit-animation: zoomIn 2s 0.8s 1 both;
+    animation: zoomIn 2s 0.8s 1 both;
+}
+#page3 p:nth-of-type(2) {
+    -webkit-animation: fadeIn 2s 2s 1 both;
+    animation: fadeIn 2s 2s 1 both;
+}
+#page3 p:nth-of-type(3) {
+    -webkit-animation: fadeIn 2s 2.5s 1 both;
+    animation: fadeIn 2s 2.5s 1 both;
+}
+#page3 p:nth-of-type(4) {
+    -webkit-animation: fadeIn 2s 3.5s 1 both;
+    animation: fadeIn 2s 3.5s 1 both;
+}
+#page3 p:nth-of-type(5) {
+    -webkit-animation: fadeIn 2s 4s 1 both;
+    animation: fadeIn 2s 4s 1 both;
+}
+#page3 p:nth-of-type(6) {
+    -webkit-animation: fadeIn 2s 5s 1 both;
+    animation: fadeIn 2s 5s 1 both;
+}
+#page3 p:nth-of-type(7) {
+    -webkit-animation: fadeIn 2s 5.5s 1 both;
+    animation: fadeIn 2s 5.5s 1 both;
+}
+#page3 p:nth-of-type(8) {
+    -webkit-animation:zoomIn 2s 3.5s 1 both;
+    animation:zoomIn 2s 3.5s 1 both;
+}
+.slide4{
+    background: url('../img/beijing1.png')no-repeat;
+    background-size: cover;
+}
+.slide4 img:nth-of-type(1){
+    width: 1.65rem;
+    height: 0.32rem;
+    position: absolute;
+    left: -0.1rem;
+    top: 0.7rem;
+}
+.slide4 img:nth-of-type(2) {
+    width: 2.84rem;
+    height: 0.74rem;
+    position: absolute;
+    left: 1.84rem;
+    top: 0.48rem;
+}
+.slide4 img:nth-of-type(3) {
+    width: 5.15rem;
+    height: 6.8rem;
+    position: absolute;
+    left: 0.68rem;
+    top: 1.36rem;
+}
+.slide4 img:nth-of-type(4) {
+    width: 6.4rem;
+    height: 0.94rem;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+}
+.slide4 img:nth-of-type(5) {
+    width:2.36rem;
+    height: 2.76rem;
+    position: absolute;
+    right: -0.1rem;
+    bottom: 0rem;
+}
+.slide4 p:nth-of-type(1) {
+    font-size: 0.4rem;
+    position: absolute;
+    left: 2.42rem;
+    top: 0.55rem;
+    color: white;
+}
+.slide4 p:nth-of-type(2) {
+    font-size: 0.3rem;
+    position: absolute;
+    left:1.02rem;
+    top: 1.69rem;
+    width: 4.52rem;
+    line-height: 0.43rem;
+}
+.slide4 p:nth-of-type(3){
+    font-size: 0.3rem;
+    position: absolute;
+    left: 1.56rem;
+    bottom: 0.25rem;
+}
+#page4 img:nth-of-type(1) {
+    -webkit-animation: fadeInLeft 2s 1 both;
+    animation: fadeInLeft 2s 1 both;
+}
+#page4 img:nth-of-type(2) {
+    -webkit-animation: zoomIn 2s 0.4s 1 both;
+    animation: zoomIn 2s 0.4s 1 both;
+}
+#page4 img:nth-of-type(3) {
+    -webkit-animation: zoomIn 1s 1.5s 1 both;
+    animation: zoomIn 1s 1.5s 1 both;
+}
+#page4 img:nth-of-type(4) {
+    -webkit-animation: fadeInUp 2s 1 both;
+    animation: fadeInUp 2s 1 both;
+}
+#page4 img:nth-of-type(5) {
+    -webkit-animation: fadeInUp 2s 0.5s 1 both;
+    animation: fadeInUp 2s 0.5s 1 both;
+}
+#page4 p:nth-of-type(1) {
+    -webkit-animation: zoomIn 2s 0.8s 1 both;
+    animation: zoomIn 2s 0.8s 1 both;
+}
+#page4 p:nth-of-type(2) {
+    -webkit-animation: fadeIn 2s 2s 1 both;
+    animation: fadeIn 2s 2s 1 both;
+}
+#page4 p:nth-of-type(3) {
+    -webkit-animation:fadeInUp 2s 3s 1 both;
+    animation:fadeInUp 2s 3s 1 both;
+}
+.slide5{
+    background: url("../img/beijing1.png")no-repeat;
+    background-size: cover;
+}
+.slide5 img:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+    background:url("../img/beijing2.png")no-repeat ;
+    /*background-size: cover;*/
+}
+.slide5 img:nth-of-type(2){
+    width: 2.24rem;
+    height: 2.49rem;
+    position: absolute;
+    left: 1.96rem;
+    top: 1.27rem;
+    overflow: hidden;
+    z-index: -111;
+    /*overflow: hidden;*/
+}
+.slide5 img:nth-of-type(3){
+    width: 5.58rem;
+    height: 2.22rem;
+    position: absolute;
+    left: 0.29rem;
+    bottom: 0rem;
+}
+.slide5 p:nth-of-type(1){
+    font-size: 0.45rem;
+    position: absolute;
+    left: 2.2rem;
+    top: 3.88rem;
+    color: white;
+}
+.slide5 p:nth-of-type(2){
+    font-size: 0.3rem;
+    position: absolute;
+    left: 1.86rem;
+    top: 4.5rem;
+    width: 2.58rem;
+    height: 0.6rem;
+    border-radius: 0.2rem;
+    background: #ee5b19;
+    color: white;
+    text-align: center;
+    line-height:0.6rem ;
+}
+#page5 img:nth-of-type(2){
+    -webkit-animation: fadeIn 2s 0.5s 1 both;
+    animation: fadeIn 2s 0.5s 1 both;
+}
+#page5 img:nth-of-type(3){
+   -webkit-animation: fadeInUp 2s 2.5s 1 both;
+   animation: fadeInUp 2s 2.5s 1 both;
+}
+#page5 p:nth-of-type(1){
+    -webkit-animation: zoomIn 2s 1s 1 both;
+    animation: zoomIn 2s 1s 1 both;
+}
+#page5 p:nth-of-type(2){
+    -webkit-animation: zoomIn 2s 1.5s 1 both;
+    animation: zoomIn 2s 1.5s 1 both;
+}
